@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blake Bell</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #0a0a0a;
+      color: #e8e8e8;
+      font-family: 'Courier New', monospace;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+
+    .container {
+      max-width: 640px;
+      width: 100%;
+    }
+
+    header {
+      margin-bottom: 3rem;
+    }
+
+    h1 {
+      font-size: 2rem;
+      font-weight: normal;
+      letter-spacing: 0.05em;
+      color: #fff;
+    }
+
+    .tagline {
+      margin-top: 0.5rem;
+      color: #666;
+      font-size: 0.9rem;
+    }
+
+    .projects {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+    }
+
+    .projects li a {
+      display: flex;
+      align-items: baseline;
+      gap: 1rem;
+      padding: 0.75rem 1rem;
+      text-decoration: none;
+      color: #e8e8e8;
+      border: 1px solid transparent;
+      transition: border-color 0.15s, color 0.15s;
+    }
+
+    .projects li a:hover {
+      border-color: #333;
+      color: #fff;
+    }
+
+    .projects li a .arrow {
+      color: #444;
+      font-size: 0.8rem;
+      transition: color 0.15s, transform 0.15s;
+      display: inline-block;
+    }
+
+    .projects li a:hover .arrow {
+      color: #888;
+      transform: translateX(3px);
+    }
+
+    .projects li a .name {
+      flex: 1;
+      font-size: 1rem;
+    }
+
+    .projects li a .desc {
+      color: #555;
+      font-size: 0.8rem;
+    }
+
+    .projects li a:hover .desc {
+      color: #777;
+    }
+
+    footer {
+      margin-top: 3rem;
+      color: #333;
+      font-size: 0.75rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Blake Bell</h1>
+      <p class="tagline">vibecode projects</p>
+    </header>
+
+    <ul class="projects">
+      <li>
+        <a href="/ninjago-game">
+          <span class="arrow">→</span>
+          <span class="name">ninjago-game</span>
+          <span class="desc">game</span>
+        </a>
+      </li>
+    </ul>
+
+    <footer>
+      <p>github.com/blakebell911</p>
+    </footer>
+  </div>
+</body>
+</html>
